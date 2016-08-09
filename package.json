@@ -1,0 +1,17 @@
+{
+  "name": "virtualmidiport",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "nexe -i index.js -o virtualmidiport"
+  },
+  "author": "David Konsumer <konsumer@jetboystudio.com> (http://konsumer.js.org)",
+  "license": "MIT",
+  "dependencies": {
+    "midi": "^0.9.5"
+  },
+  "devDependencies": {
+    "nexe": "^1.1.2"
+  }
+}
