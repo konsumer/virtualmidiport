@@ -1,5 +1,5 @@
 node_modules
 *.log
 virtualmidiport
-build
 .DS_Store
+tmp

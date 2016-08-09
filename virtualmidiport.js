@@ -1,4 +1,5 @@
-const midi = require('midi')
+// trick nexe into including native module
+const midi = require('' + 'midi')
 
 const input = new midi.input()
 const output = new midi.output()
