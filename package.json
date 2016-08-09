@@ -1,6 +1,7 @@
 {
   "name": "virtualmidiport",
   "version": "1.0.0",
+  "description": "Connect one piece of MIDI software to another using virtual ports.",
   "main": "virtualmidiport.js",
   "scripts": {
     "build": "nexe -i virtualmidiport.js -o virtualmidiport"
