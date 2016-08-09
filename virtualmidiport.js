@@ -4,8 +4,8 @@ const midi = require('' + 'midi')
 const input = new midi.input()
 const output = new midi.output()
 
-input.openVirtualPort('Virtual Port IN')
-output.openVirtualPort('Virtual Port OUT')
+input.openVirtualPort('Virtual IN')
+output.openVirtualPort('Virtual OUT')
 
 input.on('message', (deltaTime, message) => {
   // console.log('MIDI in', message)
