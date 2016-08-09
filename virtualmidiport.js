@@ -11,6 +11,7 @@ const MidiParser = require('./midiparser')
 const mp = new MidiParser()
 
 const msgTypes = ['note-off', 'note-on', 'key-pressure', 'program-change', 'channel-pressure', 'pitch-bend', 'bank-select', 'mod-wheel', 'breath-controller', 'foot-controller', 'portamento-time', 'volume', 'balance', 'pan', 'expression-controller', 'effect-control-1', 'effect-control-2', 'gp-controller-1', 'gp-controller-2', 'gp-controller-3', 'gp-controller-4', 'bank-select-fine', 'mod-wheel-fine', 'breath-controller-fine', 'foot-controller-fine', 'portamento-time-fine', 'volume-fine', 'balance-fine', 'pan-fine', 'expression-controller-fine', 'effect-control-1-fine', 'effect-control-2-fine', 'gp-controller-1-fine', 'gp-controller-2-fine', 'gp-controller-3-fine', 'gp-controller-4-fine', 'sound-variation', 'timbre-intensity', 'release-time', 'attack-time', 'brightness', 'decay-time', 'vibrato-rate', 'vibrato-depth', 'vibrato-delay', 'snd-controller-10', 'gp-controller-5', 'gp-controller-6', 'gp-controller-7', 'gp-controller-8', 'portamento', 'reverb-depth', 'tremolo-depth', 'chorus-depth', 'detune-depth', 'phaser-depth', 'damper-off', 'damper-on', 'portamento-off', 'portamento-on', 'sostenuto-off', 'sostenuto-on', 'soft-off', 'soft-on', 'legato-off', 'legato-on', 'hold2-off', 'hold2-on', 'all-sound-off', 'reset-all-controllers', 'all-notes-off', 'unknown-control-change', 'unknown-message']
+
 msgTypes.forEach(msgType => {
   mp.on(msgType, (channel, note, velocity) => {
     spinner.setSpinnerString(channel % 15)
